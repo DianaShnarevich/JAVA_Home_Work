@@ -13,7 +13,6 @@ public class name_if {
         if (Objects.equals(name, "Вася")) {
             System.out.println("Привет!\nЯ тебя так долго ждал");
         }
-
         if (Objects.equals(name, "Анастасия")) {
             System.out.println("Я тебя так долго ждал");
         }
