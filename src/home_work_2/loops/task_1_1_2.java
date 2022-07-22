@@ -7,27 +7,23 @@ public class task_1_1_2 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите положительное число");
         int number = in.nextInt();
-        System.out.println(recurcion(number));
+
+        System.out.print("1");
+        long result = recurcion(number);
+        System.out.print(" = " + result);
     }
-    public static int recurcion(int num) {
-        int result = 1;
+    public static long recurcion(int number) {
 
-        if (num == 0) {
-            System.out.print(" = ");
+        long result = 1;
+
+        if (number == 1 || number == 0){
             return result;
         }
-        if (num == 1) {
-            System.out.print(" * 1 = ");
-            return result;
+        result = number * recurcion(number - 1);
+        System.out.print(" * " + number);
+        if (result < 0){
+            System.out.println("Произошло переполнение");
         }
-
-        System.out.print(num);
-        if (num != 2) {
-            System.out.print(" * ");
-        }
-
-        result = num * recurcion(num - 1);
         return result;
-
     }
 }

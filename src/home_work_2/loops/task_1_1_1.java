@@ -8,7 +8,7 @@ public class task_1_1_1 {
         System.out.println("Введите положительное число");
         int number = in.nextInt();
 
-        int result = 1;
+        long result = 1;
         int i = 1;
 
         while (i < number) {
@@ -16,10 +16,16 @@ public class task_1_1_1 {
                 System.out.println(i + "=" + i);
                 break;
             }else {
-                System.out.print(i + "*");
+                System.out.print(i + " * ");
                 result *= ++i;
             }
         }
-        System.out.println(i + "=" + result);
+        if (result < 0) {
+            System.out.println("Произошло переполнение!");
+            System.out.print("Максимальное значение long: " + Long.MAX_VALUE);
+        } else {
+            System.out.println(i + " = " + result);
+        }
     }
+
 }
