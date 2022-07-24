@@ -18,19 +18,29 @@ public class task_1_2 {
     }
 
     public static long func(int number) {
-        int result = 1;
-        while (number != 0) {
-            long i = number % 10;
+        String num = Integer.toString(number);
+        long result = 1;
 
-            if (number > 10) {
-                System.out.print(i + " * ");
-            }
-            if (number < 10){
-                System.out.print(number);
-            }
-            number = number / 10;
+        int[] array = new int[num.length()];
 
-            result *= i;
+        for (int i = array.length - 1; i >= 0 ; i--) {
+            if (number > 9) {
+                array[i] = number % 10;
+                number = number / 10;
+            } else {
+                array[i] = number;
+            }
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            if (i > 0) {
+                System.out.print(" * " + array[i]);
+                result *= array[i];
+            }
+            if (i == 0){
+                System.out.print(array[i]);
+                result *= array[i];
+            }
         }
         return result;
     }

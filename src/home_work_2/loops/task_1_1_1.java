@@ -13,11 +13,12 @@ public class task_1_1_1 {
 
         while (i < number) {
             if (number == 1){
-                System.out.println(i + "=" + i);
+                System.out.println(i + "=" + result);
                 break;
             }else {
                 System.out.print(i + " * ");
                 result *= ++i;
+
             }
         }
         if (result < 0) {
