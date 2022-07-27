@@ -1,12 +1,12 @@
 # Java_Home_Work
-loops - 1.1.1 -- task_1_1_1;
-        1.1.2 -- task_1_1_2;
-        1.2 -- task_1_2;
-        1.3 -- task_1_3;
-        1.4 --task_1_4;
-        1.5 -- task_1_5;
-        1.6 -- task_1_6;
-
+loops - 1.1.1 -- task_1_1_1
+        1.1.2 -- task_1_1_2
+        1.2 -- task_1_2
+        1.3 -- task_1_3
+        1.4 --task_1_4
+        1.5 -- task_1_5
+        1.6 -- task_1_6
+        
 arrays - 2.2 -- ArraysIterations
          2.3 -- IArraysIterations 
               2.3.1 -- doWhileOperations
