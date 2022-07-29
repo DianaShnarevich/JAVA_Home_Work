@@ -2,38 +2,38 @@
 
 Задание 2 -- calcs.simple.CalculatorWithOperator
 
-            runners.CalculatorWithOperatorMain
+             runners.CalculatorWithOperatorMain
 
 Задание 3 -- calcs.simple.CalculatorWithMathCopy
 
-            runners.CalculatorWithMathCopyMain
+             runners.CalculatorWithMathCopyMain
 
 Задание 4 -- calcs.simple.CalculatorWithMathExtends
 
-            runners.CalculatorWithMathExtendsMain
+             runners.CalculatorWithMathExtendsMain
 
 Задание 5 -- calcs.additional.CalculatorWithCounterClassic
 
-            runners.CalculatorWithCounterClassicMain
+             runners.CalculatorWithCounterClassicMain
 
 Задание 6 -- calcs.additional.CalculatorWithCounterAutoSuper
 
-            runners.CalculatorWithCounterAutoSuperMain
+             runners.CalculatorWithCounterAutoSuperMain
 
 Задание 7 -- calcs.additional.CalculatorWithCounterAutoComposite
 
-            runners.CalculatorWithCounterDelegateCompositeMain
+             runners.CalculatorWithCounterDelegateCompositeMain
 
 Задание 8 -- calcs.additional.CalculatorWithCounterAutoAgregation
 
-            runners.CalculatorWithCounterDelegateAgregationMain
+             runners.CalculatorWithCounterDelegateAgregationMain
 
 Задание 9 -- calcs.additional.CalculatorWithCounterAutoChoiceAgregation
 
-            runners.CalculatorWithCounterDelegateChoiceAgregationMain
+             runners.CalculatorWithCounterDelegateChoiceAgregationMain
 
 Задание 10 -- calcs.api.ICalculator
 
 Задание 11 -- calcs.additional.CalculatorWithCounterAutoAgregationInterface
 
-            runners.CalculatorWithCounterAutoCompositeInterfaceMain
+             runners.CalculatorWithCounterAutoCompositeInterfaceMain
