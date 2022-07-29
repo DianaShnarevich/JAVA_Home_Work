@@ -1,8 +1,7 @@
 package home_work_3.runners;
 
 
-import home_work_3.additional.CalculatorWithCounterClassic;
-import home_work_3.calcs.simple.CalculatorWithMathExtends;
+import home_work_3.calcs.additional.CalculatorWithCounterClassic;
 
 public class CalculatorWithCounterClassicMain {
     public static void main(String[] args) {

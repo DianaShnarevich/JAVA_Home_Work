@@ -1,7 +1,9 @@
 package home_work_3.calcs.simple;
 
 
-public abstract class CalculatorWithOperator {
+import home_work_3.calcs.api.ICalculator;
+
+public class CalculatorWithOperator implements ICalculator {
     public double addition(double num1, double num2){
         return num1 + num2;
     }
@@ -43,8 +45,4 @@ public abstract class CalculatorWithOperator {
     public double square_root(double number){
         return Math.sqrt(number);
     }
-
-    public abstract double exponentiation(double num1, double num2);
-
-    public abstract double modul(double number);
 }

@@ -1,4 +1,6 @@
-package home_work_3.calcs.simple;
+package home_work_3.calcs.additional;
+
+import home_work_3.calcs.simple.CalculatorWithMathExtends;
 
 public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
     long count = 0;
@@ -32,15 +34,15 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
     }
 
     @Override
-    public double exponentiation(double num1, int num2) {
+    public double exponentiation(double num1, int degree) {
         count++;
-        return super.exponentiation(num1, num2);
+        return super.exponentiation(num1, degree);
     }
 
     @Override
     public double module(double number) {
         count++;
-        return super.modul(number);
+        return super.module(number);
     }
 
     @Override

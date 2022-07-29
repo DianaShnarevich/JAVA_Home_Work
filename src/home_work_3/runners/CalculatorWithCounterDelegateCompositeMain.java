@@ -1,6 +1,6 @@
 package home_work_3.runners;
 
-import home_work_3.calcs.simple.CalculatorWithCounterAutoComposite;
+import home_work_3.calcs.additional.CalculatorWithCounterAutoComposite;
 
 public class CalculatorWithCounterDelegateCompositeMain {
     public static void main(String[] args) {

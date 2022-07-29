@@ -1,4 +1,4 @@
-package home_work_3.calcs.simple;
+package home_work_3.calcs.additional;
 
 public class CalculatorWithCounterAutoComposite {
     CalculatorWithCounterAutoSuper fun = new CalculatorWithCounterAutoSuper();
@@ -23,8 +23,8 @@ public class CalculatorWithCounterAutoComposite {
         return fun.division(num1, num2);
     }
 
-    public double exponentiation(double num1, int num2) {
-        return fun.exponentiation(num1, num2);
+    public double exponentiation(double num1, int degree) {
+        return fun.exponentiation(num1, degree);
     }
 
     public double module(double number) {
