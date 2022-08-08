@@ -7,18 +7,18 @@ public class task_1_4 {
         System.out.print("Введите число: ");
         int number = in.nextInt();
 
-        System.out.println("Результат после переполнения: " + funclong(number));
+        System.out.println("Результат после переполнения: " + funcLong(number));
         System.out.println("Другой вариант решения с помощью try, catch ");
-        System.out.println("Результат после переполнения: " + tryexc(number));
+        System.out.println("Результат после переполнения: " + tryExcept(number));
 
 
     }
 
-    public static long funclong(int number) { // пока не придумала как сделать правильный вывод...
+    public static long funcLong(int number) { // пока не придумала как сделать правильный вывод...
         long result = 1;
         long real_result = 0;
-        for (int i = number; ; ) {
-            result *= i;
+        for (; ; ) {
+            result *= number;
             if (result < 0) {
                 System.out.println("Результат до переполнения " + real_result);
                 break;
@@ -28,7 +28,7 @@ public class task_1_4 {
         return result;
     }
 
-    public static long tryexc(int number) { //правильно работает
+    public static long tryExcept(int number) { //правильно работает
         long result_bef = 1;
         long result_aft = 0;
         for (; ; ) {
@@ -41,6 +41,6 @@ public class task_1_4 {
                 break;
             }
         }
-        return tryexc(1);
+        return tryExcept(1);
     }
 }

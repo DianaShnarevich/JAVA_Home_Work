@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ArraysUtils {
     public static void main(String[] args) {
         arrayFromConsole();
-        //arrayRandom();
+        //arrayRandom(50, 100);
     }
 
     public static int[] arrayFromConsole(){

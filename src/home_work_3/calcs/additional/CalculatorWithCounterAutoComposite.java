@@ -1,7 +1,7 @@
 package home_work_3.calcs.additional;
 
 public class CalculatorWithCounterAutoComposite {
-    CalculatorWithCounterAutoSuper fun = new CalculatorWithCounterAutoSuper();
+    private final CalculatorWithCounterAutoSuper fun = new CalculatorWithCounterAutoSuper();
 
     public long getCountOperation() {
         return fun.count;

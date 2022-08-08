@@ -1,21 +1,19 @@
 package home_work_3.calcs.additional;
 
-import home_work_3.calcs.simple.CalculatorWithMathExtends;
+import home_work_3.calcs.simple.CalculatorWithMathCopy;
 
 public class CalculatorWithCounterAutoAgregation {
-    CalculatorWithMathExtends calculator;
-
-    public CalculatorWithCounterAutoAgregation(CalculatorWithMathExtends calculator){
-        this.calculator = calculator;
+    private final CalculatorWithMathCopy calculator;
+    public CalculatorWithCounterAutoAgregation(CalculatorWithMathCopy fun) {
+        this.calculator = fun;
     }
-
     private long count = 0;
 
-    private void incrementCountOperation() {
+    public void incrementCountOperation(){
         count++;
     }
 
-    public long getCountOperation() {
+    public long getCountOperation(){
         return count;
     }
 

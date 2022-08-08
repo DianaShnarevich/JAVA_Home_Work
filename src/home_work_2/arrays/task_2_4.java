@@ -62,7 +62,7 @@ public class task_2_4 {
 
         for (int i = 0; i < array.length; i++) {
             if (i < average) {
-                string.append(i + " ");
+                string.append(i).append(" ");
             }
         }
         string.setLength(string.length() - 1);
@@ -102,8 +102,8 @@ public class task_2_4 {
                array[i] = 0;
            }
         }
-        String result = Arrays.toString(array);
-        return result;
+        return Arrays.toString(array);
+
     }
 
     public static StringBuilder task_2_4_6(int[] array) {

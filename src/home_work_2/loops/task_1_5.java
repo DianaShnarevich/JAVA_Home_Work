@@ -70,25 +70,25 @@ public class task_1_5 {
 
         int num1 = 1;
         int num2 = 2;
-        String result = " ";
+        StringBuilder result = new StringBuilder(" ");
 
         if (number == 1) {
-            result += num1;
+            result.append(num1);
         }else {
             number = number - 2;
 
-            result += num1 + " " + num2;
+            result.append(num1).append(" ").append(num2);
             for (int i = 0; i < number; i++) {
                 if (i % 2 == 0) {
                     num1 += num2;
-                    result += " " + num1;
+                    result.append(" ").append(num1);
                 } else {
                     num2 += num1;
-                    result += " " + num2;
+                    result.append(" ").append(num2);
                 }
             }
         }
-        return result;
+        return result.toString();
     }
 
     public static String task_1_5_5(){
@@ -99,15 +99,15 @@ public class task_1_5 {
         int max = in.nextInt();
         System.out.print("Введите шаг: ");
         int num = in.nextInt();
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         int count = min;
 
         while (count <= max){
-            result += " " + count;
+            result.append(" ").append(count);
             count += num;
         }
-        return result;
+        return result.toString();
     }
 
     public static String task_1_5_6(){
@@ -115,12 +115,12 @@ public class task_1_5 {
         System.out.println("Введите число которое хотите перевернуть: ");
         int number = in.nextInt();
         int revers = 0;
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         while (number > 0){
-            result += number % 10;
+            result.append(number % 10);
             number = number / 10;
         }
-        return result;
+        return result.toString();
     }
 }

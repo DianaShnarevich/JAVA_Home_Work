@@ -6,7 +6,7 @@ public interface IArraysOperation {
         StringBuilder string = new StringBuilder();
         int i = 0;
         do {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
             i++;
         } while (i < array.length);
         string.setLength(string.length() - 1);
@@ -17,7 +17,7 @@ public interface IArraysOperation {
         StringBuilder string = new StringBuilder();
         int i = 0;
         while (i < array.length) {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
             i++;
         }
         string.setLength(string.length() - 1);
@@ -27,7 +27,7 @@ public interface IArraysOperation {
     default StringBuilder cycleFor_all(int[] array) {
         StringBuilder string = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
         }
         string.setLength(string.length() - 1);
         return string;
@@ -36,7 +36,7 @@ public interface IArraysOperation {
     default StringBuilder cycleForEach_all(int[] array) {
         StringBuilder string = new StringBuilder();
         for (int element : array) {
-            string.append(element + " ");
+            string.append(element).append(" ");
         }
         string.setLength(string.length() - 1);
         return string;
@@ -48,7 +48,7 @@ public interface IArraysOperation {
         int i = 0;
         do {
             if (i % 2 != 0 && i != 0) {
-                string.append(array[i] + " ");
+                string.append(array[i]).append(" ");
             }
             i++;
         } while (i < array.length);
@@ -61,7 +61,7 @@ public interface IArraysOperation {
         int i = 0;
         while (i < array.length) {
             if (i % 2 != 0 && i != 0) {
-                string.append(array[i] + " ");
+                string.append(array[i]).append(" ");
             }
             i++;
         }
@@ -72,7 +72,7 @@ public interface IArraysOperation {
     default StringBuilder cycleFor_Second(int[] array) {
         StringBuilder string = new StringBuilder();
         for (int i = 1; i < array.length; ) {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
             i += 2;
         }
         string.setLength(string.length() - 1);
@@ -84,7 +84,7 @@ public interface IArraysOperation {
         int count = 1;
         for (int element : array) {
             if (count % 2 == 0) {
-                string.append(element + " ");
+                string.append(element).append(" ");
             }
             count++;
         }
@@ -97,7 +97,7 @@ public interface IArraysOperation {
         StringBuilder string = new StringBuilder();
         int i = array.length - 1;
         do {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
             i--;
         } while (i >= 0);
         string.setLength(string.length() - 1);
@@ -108,7 +108,7 @@ public interface IArraysOperation {
         StringBuilder string = new StringBuilder();
         int i = array.length - 1;
         while (i >= 0) {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
             i--;
         }
         string.setLength(string.length() - 1);
@@ -118,7 +118,7 @@ public interface IArraysOperation {
     default StringBuilder cycleFor_Reverse(int[] array) {
         StringBuilder string = new StringBuilder();
         for (int i = array.length - 1; i >= 0; i--) {
-            string.append(array[i] + " ");
+            string.append(array[i]).append(" ");
         }
         string.setLength(string.length() - 1);
         return string;
@@ -128,7 +128,7 @@ public interface IArraysOperation {
         StringBuilder string = new StringBuilder();
         int j = array.length - 1;
         for (int i : array) {
-            string.append(array[j] + " ");
+            string.append(array[j]).append(" ");
             j--;
         }
         string.setLength(string.length() - 1);

@@ -10,8 +10,6 @@ public class CalculatorWithCounterClassicMain {
         double result = fun.addition((fun.addition(4.1, fun.multiplication(15, 7))),
                 (fun.exponentiation(fun.division(28, 5), 2)));
 
-        fun.incrementCountOperation();
-
         System.out.println(result);
 
         System.out.println(fun.getCountOperation());
