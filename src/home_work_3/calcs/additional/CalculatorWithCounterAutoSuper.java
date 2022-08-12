@@ -12,11 +12,7 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
     public long getCountOperation() {
         return count;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 3e61d8f85841139d93849295fa0b3ed66af99194
     public double addition(double num1, double num2) {
         count++;
         return super.addition(num1, num2);
@@ -36,11 +32,7 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
         count++;
         return super.division(num1, num2);
     }
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 3e61d8f85841139d93849295fa0b3ed66af99194
     public double exponentiation(double num1, int degree) {
         count++;
         return super.exponentiation(num1, degree);
