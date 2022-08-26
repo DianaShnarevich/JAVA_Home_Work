@@ -1,8 +1,8 @@
 package home_work_5;
 
-import home_work_5.Comparators.AnimalAgeAndNickComparator;
+import home_work_5.Comparators.AnimalAgeNickComparator;
 import home_work_5.Comparators.AnimalAgeComparator;
-import home_work_5.Comparators.PasswordAndNickComparator;
+import home_work_5.Comparators.PasswordNickComparator;
 import home_work_5.Comparators.PasswordComparator;
 import home_work_5.DTO.Animal;
 import home_work_5.DTO.Person;
@@ -18,9 +18,9 @@ public class Main {
     public static void main(String[] args) {
 
         PasswordComparator passwordComparator = new PasswordComparator();
-        PasswordAndNickComparator passwordAndNickComparator = new PasswordAndNickComparator();
+        PasswordNickComparator passwordAndNickComparator = new PasswordNickComparator();
 
-        AnimalAgeAndNickComparator animalAgeAndNickComparator = new AnimalAgeAndNickComparator();
+        AnimalAgeNickComparator animalAgeAndNickComparator = new AnimalAgeNickComparator();
         AnimalAgeComparator animalAgeComparator = new AnimalAgeComparator();
 
         ArrayList<Person> personArrayList = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Main {
         collectionPerson(personArrayList, 1_000);
         long finish1 = System.currentTimeMillis();
         System.out.println(personArrayList.size());
-        System.out.println("Операция: collectionPerson. Заняла " + (finish1 - start1) + " мс");
+        System.out.println("collectionPerson:" + (finish1 - start1));
 
         testPerson(personArrayList, passwordAndNickComparator);
 
@@ -37,7 +37,7 @@ public class Main {
         collectionPerson(personLinkedList, 1_000);
         long finish2 = System.currentTimeMillis();
         System.out.println(personLinkedList.size());
-        System.out.println("Операция: collectionPerson. Заняла " + (finish2 - start2) + " мс");
+        System.out.println("collectionPerson:" + (finish2 - start2));
 
         testPerson(personLinkedList, passwordComparator);
 
@@ -46,7 +46,7 @@ public class Main {
         collectionPerson(personHashSet, 1_000);
         long finish3 = System.currentTimeMillis();
         System.out.println(personHashSet.size());
-        System.out.println("Операция: collectionPerson. Заняла " + (finish3 - start3) + " мс");
+        System.out.println("collectionPerson:" + (finish3 - start3));
 
         testPerson(personHashSet, passwordAndNickComparator);
 
@@ -55,7 +55,7 @@ public class Main {
         collectionPerson(personTreeSet, 1_000);
         long finish4 = System.currentTimeMillis();
         System.out.println(personTreeSet.size());
-        System.out.println("Операция: collectionPerson. Заняла " + (finish4 - start4) + " мс");
+        System.out.println("collectionPerson:" + (finish4 - start4));
 
         testPerson(personTreeSet, passwordAndNickComparator);
 
@@ -64,7 +64,7 @@ public class Main {
         collectionAnimal(animalArrayList, 1_000);
         long finish5 = System.currentTimeMillis();
         System.out.println(animalArrayList.size());
-        System.out.println("Операция: collectionAnimal. Заняла " + (finish5 - start5) + " мс");
+        System.out.println("collectionAnimal:" + (finish5 - start5));
 
         testPerson(animalArrayList, animalAgeComparator);
 
@@ -73,7 +73,7 @@ public class Main {
         collectionAnimal(animalLinkedList, 1_000);
         long finish6 = System.currentTimeMillis();
         System.out.println(animalLinkedList.size());
-        System.out.println("Операция: collectionAnimal. Заняла " + (finish6 - start6) + " мс");
+        System.out.println("collectionAnimal:" + (finish6 - start6));
 
         testPerson(animalLinkedList, animalAgeAndNickComparator);
 
@@ -82,7 +82,7 @@ public class Main {
         collectionAnimal(animalHashSet, 1_000);
         long finish7 = System.currentTimeMillis();
         System.out.println(animalHashSet.size());
-        System.out.println("Операция: collectionAnimal. Заняла " + (finish7 - start7) + " мс");
+        System.out.println("collectionAnimal:" + (finish7 - start7));
 
         testPerson(animalHashSet, animalAgeComparator);
 
@@ -91,7 +91,7 @@ public class Main {
         collectionAnimal(animalTreeSet, 1_000);
         long finish8 = System.currentTimeMillis();
         System.out.println(animalTreeSet.size());
-        System.out.println("Операция: collectionAnimal. Заняла " + (finish8 - start8) + " мс");
+        System.out.println("collectionAnimal:" + (finish8 - start8));
 
         testPerson(animalTreeSet, animalAgeAndNickComparator);
     }

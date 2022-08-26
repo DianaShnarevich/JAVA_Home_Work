@@ -4,14 +4,14 @@ import home_work_5.DTO.Animal;
 
 import java.util.Comparator;
 
-public class AnimalAgeAndNickComparator implements Comparator<Animal> {
+public class AnimalAgeNickComparator implements Comparator<Animal> {
 
     @Override
     public int compare(Animal animal1, Animal animal2) {
-        int result1 = Integer.compare(animal1.getAge(), animal2.getAge());
-        if (result1 == 0) {
+        int result = Integer.compare(animal1.getAge(), animal2.getAge());
+        if (result == 0) {
             return animal1.getNick().compareTo(animal2.getNick());
         }
-        return result1;
+        return result;
     }
 }
