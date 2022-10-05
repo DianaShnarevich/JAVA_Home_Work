@@ -1,23 +1,23 @@
 package home_work_1.branching_operators;
 
-import java.util.Scanner;
+public class Divisibility {
+     private  int num1;
+     private  int num2;
 
-public class divisibility {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input a first number: ");
-        int num1 = in.nextInt();
-        System.out.print("Input a second number");
-        int num2 = in.nextInt();
+     public Divisibility(int num1, int num2) {
+         this.num1 = num1;
+         this.num2 = num2;
+     }
 
-        if (num1 % num2 == 0) {
-            System.out.println("The number 1 is divided by the number 2");
+     public String getAnswer() {
+        if(num1 == 0 || num2 == 0){
+            return "You can't divide by zero!";
+        }else if (num1 % num2 == 0) {
+            return "The number 1 is divided by the number 2";
         } else if (num2 % num1 == 0) {
-            System.out.println("The number 2 is divided by the number 1");
-        } else {
-            System.out.println("The entered numbers are not divisible by each other");
+            return "The number 2 is divided by the number 1";
         }
-            
+        return "The entered numbers are not divisible by each other";
     }
 }
 

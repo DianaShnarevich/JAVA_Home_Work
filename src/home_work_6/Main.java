@@ -7,32 +7,32 @@ public class Main {
     public static void main(String[] args) {
 
 
-        EasySearch easySearch = new EasySearch();
-        Decorator unimportant = new Decorator(easySearch);
+        EasySearch search = new EasySearch();
+        Decorator decorator = new Decorator(search);
         String x = Util.converting("HomeWork/src/home_work_6/WarAndPeace.txt");
 
         System.out.print("Слово \"война\" с учетом регистра встречалось ");
-        System.out.print(easySearch.search(x, "война") + " раз(-а)");
+        System.out.print(search.search(x, "война") + " раз(-а)");
         System.out.println();
 
         System.out.print("Слово \"война\" без учёта регистра встречалось ");
-        System.out.print(unimportant.search(x, "война") + " раз(-а)");
+        System.out.print(decorator.search(x, "война") + " раз(-а)");
         System.out.println();
 
         System.out.print("Слово \"и\" с учетом регистра встречалось ");
-        System.out.print(easySearch.search(x, "и") + " раз(-а)");
+        System.out.print(search.search(x, "и") + " раз(-а)");
         System.out.println();
 
         System.out.print("Слово \"и\" без учёта регистра встречалось ");
-        System.out.print(unimportant.search(x, "и") + " раз(-а)");
+        System.out.print(decorator.search(x, "и") + " раз(-а)");
         System.out.println();
 
         System.out.print("Слово \"мир\" с учетом регистра встречалось ");
-        System.out.print(easySearch.search(x, "мир") + " раз(-а)");
+        System.out.print(search.search(x, "мир") + " раз(-а)");
         System.out.println();
 
         System.out.print("Слово \"мир\" без учёта регистра встречалось ");
-        System.out.print(unimportant.search(x, "мир") + " раз(-а)");
+        System.out.print(decorator.search(x, "мир") + " раз(-а)");
         System.out.println();
     }
 }

@@ -2,6 +2,8 @@ package home_work_6;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 public class Collections {
@@ -74,5 +76,16 @@ public class Collections {
             System.out.println(arrList.get(i));
             i++;
         }
+    }
+
+    public static String getString(String string) {
+        String book;
+        try {
+            book = Files.readString(Path.of(string));
+        } catch (IOException e) {
+            System.out.println("Файл не найден");
+            throw new RuntimeException(e);
+        }
+        return book;
     }
 }

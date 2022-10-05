@@ -1,17 +1,6 @@
 package home_work_2.loops;
 
-import java.util.Scanner;
-
-public class task_1_1_2 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите положительное число");
-        int number = in.nextInt();
-
-        System.out.print("1");
-        long result = recursion(number);
-        System.out.print(" = " + result);
-    }
+public class Task_1_1_2 {
     public static long recursion(int number) {
 
         long result = 1;

@@ -1,21 +1,9 @@
 package home_work_2.loops;
 import java.util.Random;
-import java.util.Scanner;
 
-public class task_1_5 {
-    public static void main(String[] args) {
-        System.out.println("Наибольшая цифра натурального числа: " + task_1_5_1());
-        System.out.println("Вероятность выпадения четного числа: " + task_1_5_2() + "%");
-        System.out.println("Нечетных цифр: " + task_1_5_3());
-        System.out.println("Ряд Фибоначчи : " + task_1_5_4());
-        System.out.println("Диапозон чисел c шагом: " + task_1_5_5());
-        System.out.println("Перевернутое число: " + task_1_5_6());
-    }
+public class Task_1_5 {
 
-    public static int task_1_5_1() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите натуральное число: ");
-        int number = in.nextInt();
+    public int task_1_5_1(int number) {
         int max = 0;
 
         while (number > 0) {
@@ -25,7 +13,7 @@ public class task_1_5 {
         return max;
     }
 
-    public static float task_1_5_2(){
+    public float task_1_5_2(){
         float probability = 0;
 
         int[] array = new int[1000];
@@ -41,11 +29,8 @@ public class task_1_5 {
         return probability;
     }
 
-    public static int task_1_5_3(){
+    public int task_1_5_3(int number){
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число: ");
-        int number = in.nextInt();
         int even = 0;
         int odd = 0;
 
@@ -63,58 +48,38 @@ public class task_1_5 {
 
     }
 
-    public static String task_1_5_4(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите количество элементов в ряду: ");
-        int number = in.nextInt();
+    public static int[] task_1_5_4(int count) {
 
+
+        int num = 0;
         int num1 = 1;
-        int num2 = 2;
-        StringBuilder result = new StringBuilder(" ");
-
-        if (number == 1) {
-            result.append(num1);
-        }else {
-            number = number - 2;
-
-            result.append(num1).append(" ").append(num2);
-            for (int i = 0; i < number; i++) {
-                if (i % 2 == 0) {
-                    num1 += num2;
-                    result.append(" ").append(num1);
-                } else {
-                    num2 += num1;
-                    result.append(" ").append(num2);
-                }
-            }
+        int num2;
+        int[] array = new int[count];
+        for (int i = 0; i < array.length; i++) {
+            num2 = num + num1;
+            num = num1;
+            num1 = num2;
+            array[i] = num1;
         }
-        return result.toString();
+        return array;
     }
 
-    public static String task_1_5_5(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите минимальное значение: ");
-        int min = in.nextInt();
-        System.out.print("Введите максимальное значение: ");
-        int max = in.nextInt();
-        System.out.print("Введите шаг: ");
-        int num = in.nextInt();
-        StringBuilder result = new StringBuilder();
-
-        int count = min;
-
-        while (count <= max){
-            result.append(" ").append(count);
-            count += num;
+    public static int[] task_1_5_5(int min, int max, int num){
+        int result = min;
+        int i;
+        for (i = 0; result <= max; i++) {
+            result = result + num;
         }
-        return result.toString();
+        result = min;
+        int[] array = new int[i];
+        for (int j = 0; j < i; j++) {
+            array[j] = result;
+            result = result + num;
+        }
+        return array;
     }
 
-    public static String task_1_5_6(){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите число которое хотите перевернуть: ");
-        int number = in.nextInt();
-        int revers = 0;
+    public String task_1_5_6(int number){
         StringBuilder result = new StringBuilder();
 
         while (number > 0){

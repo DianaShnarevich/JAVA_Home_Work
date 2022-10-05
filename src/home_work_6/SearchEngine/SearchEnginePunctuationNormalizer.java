@@ -1,7 +1,5 @@
 package home_work_6.SearchEngine;
 
-import home_work_6.SearchEngine.ISearchEngine;
-
 public class SearchEnginePunctuationNormalizer implements ISearchEngine {
     private final ISearchEngine searchEngine;
 

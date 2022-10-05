@@ -1,7 +1,5 @@
 package home_work_6.SearchEngine;
 
-import home_work_6.SearchEngine.ISearchEngine;
-
 public class EasySearch implements ISearchEngine {
     @Override
     public long search(String text, String word) {

@@ -5,7 +5,7 @@ import home_work_2.utils.ArraysUtils;
 
 import java.util.Arrays;
 
-public class task_2_4 {
+public class Task_2_4 {
     public static void main(String[] args) {
         System.out.println("Сумма четных положительных элементов массива");
         System.out.println(task_2_4_1(ArraysUtils.arrayRandom(50, 100)));

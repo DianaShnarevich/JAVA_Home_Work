@@ -1,20 +1,13 @@
 package home_work_2.loops;
-import java.util.Scanner;
 
-public class task_1_4 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число: ");
-        int number = in.nextInt();
-
-        System.out.println("Результат после переполнения: " + funcLong(number));
-        System.out.println("Другой вариант решения с помощью try, catch ");
-        System.out.println("Результат после переполнения: " + tryExcept(number));
-
-
+public class Task_1_4 {
+    private int number;
+    public Task_1_4(int number){
+        this.number = number;
     }
 
-    public static long funcLong(int number) { // пока не придумала как сделать правильный вывод...
+
+    public long funcLong() {
         long result = 1;
         long real_result = 0;
         for (; ; ) {
@@ -28,7 +21,7 @@ public class task_1_4 {
         return result;
     }
 
-    public static long tryExcept(int number) { //правильно работает
+    public long tryExcept() { //правильно работает
         long result_bef = 1;
         long result_aft = 0;
         for (; ; ) {
@@ -41,6 +34,6 @@ public class task_1_4 {
                 break;
             }
         }
-        return tryExcept(1);
+        return tryExcept();
     }
 }
