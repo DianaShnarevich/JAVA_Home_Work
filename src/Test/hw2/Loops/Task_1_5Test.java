@@ -1,9 +1,11 @@
 package Test.hw2.Loops;
 import home_work_2.loops.Task_1_5;
 import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 
 public class Task_1_5Test {
 
@@ -15,8 +17,8 @@ public class Task_1_5Test {
 
     @Test
     public void evenOdd() {
-        Task_1_5 test3 = new Task_1_5();
-        Assertions.assertEquals("3; 3", test3.task_1_5_3(367281));
+        Task_1_5 test2 = new Task_1_5();
+        Assertions.assertEquals("3; 3", test2.task_1_5_3(367281));
     }
 
     @Test

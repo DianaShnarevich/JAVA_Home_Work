@@ -39,8 +39,8 @@ public class CalculatorWithMemory {
 
     public double addition(double x, double y) {
         incrementCountOperation();
-        addLastOperationResult(calculator.adding(x, y));
-        return calculator.adding(x, y);
+        addLastOperationResult(calculator.addition(x, y));
+        return calculator.addition(x, y);
     }
 
     public double subtraction(double x, double y) {
@@ -69,13 +69,13 @@ public class CalculatorWithMemory {
 
     public double module(double x) {
         incrementCountOperation();
-        addLastOperationResult(calculator.numberModulus(x));
-        return calculator.numberModulus(x);
+        addLastOperationResult(calculator.module(x));
+        return calculator.module(x);
     }
 
     public double square_root(double x) {
         incrementCountOperation();
-        addLastOperationResult(calculator.squareRoot(x));
-        return calculator.squareRoot(x);
+        addLastOperationResult(calculator.square_root(x));
+        return calculator.square_root(x);
     }
 }

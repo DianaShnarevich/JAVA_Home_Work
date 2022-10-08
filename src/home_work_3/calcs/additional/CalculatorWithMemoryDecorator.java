@@ -41,12 +41,6 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
         return calculator;
     }
 
-    public double adding(double x, double y) {
-        incrementCountOperation();
-        addLastOperationResult(calculator.adding(x, y));
-        return calculator.adding(x, y);
-    }
-
     @Override
     public double addition(double num1, double num2) {
         return 0;
@@ -84,27 +78,5 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
     @Override
     public double square_root(double number) {
         return 0;
-    }
-
-    @Override
-    public double numberModulus(double x) {
-        return 0;
-    }
-
-    @Override
-    public double squareRoot(double x) {
-        return 0;
-    }
-
-    public double numberModule(double x) {
-        incrementCountOperation();
-        addLastOperationResult(calculator.numberModulus(x));
-        return calculator.numberModulus(x);
-    }
-
-    public double squarRoot(double x) {
-        incrementCountOperation();
-        addLastOperationResult(calculator.squareRoot(x));
-        return calculator.squareRoot(x);
     }
 }

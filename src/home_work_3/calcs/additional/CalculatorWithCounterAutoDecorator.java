@@ -24,12 +24,6 @@ public class CalculatorWithCounterAutoDecorator implements ICalculator {
     }
 
     @Override
-    public double adding(double x, double y) {
-        incrementCountOperation();
-        return calculator.addition(x, y);
-    }
-
-    @Override
     public double addition(double x, double y) {
         incrementCountOperation();
         return calculator.addition(x, y);
@@ -67,17 +61,5 @@ public class CalculatorWithCounterAutoDecorator implements ICalculator {
     @Override
     public double square_root(double number) {
         return 0;
-    }
-
-    @Override
-    public double numberModulus(double x) {
-        incrementCountOperation();
-        return calculator.module(x);
-    }
-
-    @Override
-    public double squareRoot(double x) {
-        incrementCountOperation();
-        return calculator.square_root(x);
     }
 }

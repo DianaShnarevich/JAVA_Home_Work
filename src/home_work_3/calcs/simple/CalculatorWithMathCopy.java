@@ -33,4 +33,5 @@ public class CalculatorWithMathCopy implements ICalculator {
     public double square_root(double number){
         return Math.sqrt(number);
     }
+
 }
